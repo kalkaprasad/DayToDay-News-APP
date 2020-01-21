@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".treandingNews">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        app:cardBackgroundColor="#fff"
+        app:cardCornerRadius="9dp">
+
+        <TextView
+            android:id="@+id/f_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Title"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/f_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/action"
+        android:fontFamily="sans-serif"
+        android:text="Time"
+        android:paddingLeft="20dp"
+        android:textColor="#00f"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/f_date"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/google"
+        android:fontFamily="sans-serif"
+        android:text="Date"
+        android:textColor="#00f"
+        android:paddingLeft="30dp"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/f_image"
+        android:layout_width="match_parent"
+        android:layout_height="179dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:src="@drawable/earth" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/fb"
+            android:layout_width="25dp"
+            android:layout_height="35dp"
+            android:layout_marginHorizontal="40dp"
+            android:src="@drawable/fbbb" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/whatsapp"
+            android:layout_width="25dp"
+            android:layout_height="35dp"
+            android:layout_marginHorizontal="20dp"
+            android:src="@drawable/twii" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/email"
+            android:layout_width="25dp"
+            android:layout_height="35dp"
+            android:layout_marginHorizontal="20dp"
+            android:src="@drawable/gogli" />
+
+    </LinearLayout>
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:cardElevation="20dp"
+        app:cardBackgroundColor="#DFE8EC"
+        app:cardCornerRadius="10dp">
+
+        <TextView
+            android:id="@+id/f_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Discription:"
+            android:textColor="#f000"
+            android:textSize="15dp" />
+
+    </com.google.android.material.card.MaterialCardView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/commentrv"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="3">
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="Write comment"
+                android:id="@+id/et_comment"
+                android:layout_marginTop="10dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="submit"
+                android:onClick="submit"
+                android:layout_weight=".5"/>
+
+
+        </LinearLayout>
+
+
+
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/mytrendnewslist">
+</androidx.recyclerview.widget.RecyclerView>
+
+
+
+</LinearLayout>
+</ScrollView>                

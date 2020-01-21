@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#C86969EC"
+
+    tools:context=".Splashscreen">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="130dp"
+        android:src="@drawable/circle" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="DayTO"
+            android:paddingLeft="110dp"
+            android:textColor="#FFf"
+            android:fontFamily="casual"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DayNews"
+            android:textSize="35dp"
+            android:textColor="#f000"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="casual"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@string/common_google_play_services_update_text"
+        android:paddingLeft="10dp"
+        android:text="Day to Day News Rahai,Sab sai Agai"
+        android:textColor="#FCFBFB"
+        android:textSize="18dp"
+        android:textStyle="normal" />
+
+</LinearLayout>

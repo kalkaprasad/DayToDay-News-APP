@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Addpost">
+
+    <ImageView
+        android:id="@+id/opencamera"
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:onClick="opencameras"
+        android:src="@drawable/ic_camera_alt_black_24dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/newstype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:hint="News type"
+        android:textStyle="bold"/>
+    <Spinner
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/spinners">
+    </Spinner>
+
+    <EditText
+        android:id="@+id/descri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Description"
+        android:textStyle="bold"/>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="POST"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:onClick="Post"
+        android:background="@drawable/twiter"/>
+
+
+</LinearLayout>
+</ScrollView>

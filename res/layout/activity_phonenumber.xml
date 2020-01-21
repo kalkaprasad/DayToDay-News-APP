@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Phonenumber">
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:hint="Enter phone number"
+        android:textColor="#ff00"
+        android:id="@+id/phone"
+        android:textSize="15dp"
+        android:paddingLeft="10dp"
+        android:inputType="number"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/twiter"
+        android:layout_gravity="center"/>
+    <EditText
+        android:id="@+id/otpsend"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:hint="Enter Otp"
+        android:paddingLeft="10dp"
+        android:textColor="#ff00"
+        android:inputType="textPassword"
+        android:textSize="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/twiter"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Send Otp"
+        android:textColor="#FFF"
+        android:background="@drawable/google"/>
+
+    <Button
+        android:id="@+id/otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Verify Otp"
+        android:textColor="#FFF"
+        android:visibility="invisible"
+        android:background="@drawable/google"/>
+
+
+</LinearLayout>
