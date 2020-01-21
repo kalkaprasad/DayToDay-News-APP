@@ -1,0 +1,2 @@
+# DayToDay-News-APP
+DayToDay news App  is a Basic News App , this is the my first project  of Android..  I have use the  Firebase  as a backend  Service  and frontend  using XMl.. basicly this App is devolped using Java Language.. This App have Category Wise News like , treanding News, Crime News,etc.. if You want to use this App then  You should be do first of fall Connect Your APP to Firebase and then Sync this Project then definitely.
